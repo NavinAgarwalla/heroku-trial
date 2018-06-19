@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+
+		<script src="/resources/sap-ui-core.js"
+				id="sap-ui-bootstrap"
+				data-sap-ui-libs="sap.m"
+				data-sap-ui-theme="sap_bluecrystal">
+		</script>
+		<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
+
+		<script>
+				sap.ui.localResources("training");
+				var app = new sap.m.App({initialPage:"idMain1"});
+				var page = sap.ui.view({id:"idMain1", viewName:"training.Main", type:sap.ui.core.mvc.ViewType.JS});
+				app.addPage(page);
+				app.placeAt("content");
+		</script>
+ 
+
+
+ 
+
+	</head>
+	<body class="sapUiBody" role="application">
+		<div id="content"></div>
+	
+	<!--pokebot script-->
+	<script src="https://cdn.recast.ai/webchat/webchat.js"
+	channelId="a0ea5e44-5290-4919-b97e-27c282d953f7"
+	token="a105ac7e7ca2c1d9cc5f5d8c741941c5"
+	id="recast-webchat"></script>
+	<meta name="viewport" content="width=device-width">
+
+
+	
+	<!-- movie-bot script -->
+		<!-- <script src="https://cdn.recast.ai/webchat/webchat.js" 
+			 channelId="12c6cf12-0fd8-4098-8545-39cf385e427d"
+			token="811b73a91069bcf739e8395435695b32"
+			id="recast-webchat">
+		</script> -->
+	
+		
+	</body>
+</html>
